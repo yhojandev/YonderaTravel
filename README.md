@@ -28,12 +28,10 @@
    npm start
    ```
 
-4. Visita la página en tu navegador en `http://localhost:3000`.
+4. Visita la página en tu navegador en `http://localhost:4322`.
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar el proyecto, no dudes en abrir un "issue" o enviar un "pull request". Asegúrate de seguir las mejores prácticas de desarrollo y de escribir pruebas para cualquier nueva funcionalidad.
+¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar la página, no dudes en abrir un "issue" o enviar un "pull request".
 
-## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.

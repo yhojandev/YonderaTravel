@@ -13,7 +13,6 @@ import Header from '../components/Header.astro';
     <title>Yondera Travel</title>
   </head>
   <body>
-    <img src="background.webp" alt="" class="-z-10 absolute" />
     <Header />
     <slot />
   </body>
@@ -31,8 +30,3 @@ import Header from '../components/Header.astro';
     height: 100%;
   }
 </style>
-<script>
-  const backgroundWhite = 'bg-white bg-opacity-40 backdrop-saturate-[180%] backdrop-blur-[20px]';
-  const backgroundDark =
-    'dark:bg-gray-900 dark:bg-opacity-40 dark:backdrop-saturate-[180%] dark:backdrop-blur-[20px]';
-</script>

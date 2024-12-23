@@ -32,8 +32,4 @@
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar el proyecto, no dudes en abrir un "issue" o enviar un "pull request". Asegúrate de seguir las mejores prácticas de desarrollo y de escribir pruebas para cualquier nueva funcionalidad.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar la página, no dudes en abrir un "issue" o enviar un "pull request".

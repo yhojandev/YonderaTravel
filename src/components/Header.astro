@@ -1,0 +1,18 @@
+---
+import HeaderMenu from './header/HeaderMenu.astro';
+import Logo from './header/Logo.astro';
+import HeaderLanguage from './header/HeaderLanguage.astro';
+import ButtonDarkTheme from './header/ButtonDarkTheme.astro';
+---
+
+<header
+  class="sticky z-20 top-0 bg-white bg-opacity-40 backdrop-saturate-[180%] backdrop-blur-[20px]
+  dark:bg-gray-900 dark:bg-opacity-40 dark:backdrop-saturate-[180%] dark:backdrop-blur-[20px]"
+>
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <Logo />
+    <HeaderLanguage />
+    <ButtonDarkTheme />
+    <HeaderMenu />
+  </div>
+</header>

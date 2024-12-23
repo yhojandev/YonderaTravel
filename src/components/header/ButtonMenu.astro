@@ -1,0 +1,25 @@
+---
+import Menu from '../../icons/Menu.astro';
+import X from '../../icons/X.astro';
+---
+
+<button
+  id="toggleMenu"
+  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-txtLightPrimary rounded-lg md:hidden hover:bg-gray-100 dark:text-txtDarkPrimary dark:hover:bg-gray-700"
+>
+  <Menu id="openMenuIcon" class="" />
+  <X id="closeMenuIcon" class="hidden" />
+</button>
+
+<script>
+  const toggleMenu = document.querySelector('#toggleMenu');
+  const togleOpenMenu = document.querySelector('#toggleOpenMenu');
+  const openMenuIcon = document.querySelector('#openMenuIcon');
+  const closeMenuIcon = document.querySelector('#closeMenuIcon');
+
+  toggleMenu?.addEventListener('click', () => {
+    togleOpenMenu?.classList.toggle('hidden');
+    openMenuIcon?.classList.toggle('hidden');
+    closeMenuIcon?.classList.toggle('hidden');
+  });
+</script>

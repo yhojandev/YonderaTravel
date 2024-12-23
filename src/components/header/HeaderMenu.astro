@@ -1,0 +1,48 @@
+---
+import ButtonMenu from './ButtonMenu.astro';
+
+const MENU = [
+  {
+    title: 'Inicio',
+    link: '/',
+  },
+  {
+    title: 'Tours',
+    link: '#',
+  },
+  {
+    title: 'Destinos',
+    link: '#',
+  },
+  {
+    title: 'Servicios',
+    link: '#',
+  },
+  {
+    title: 'Contactanos',
+    link: '#',
+  },
+];
+---
+
+<ButtonMenu />
+<nav
+  class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+  id="toggleOpenMenu"
+>
+  <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 md:flex-row md:mt-0">
+    {
+      MENU.map((menu) => (
+        <li>
+          <a
+            href={menu.link}
+            class="block py-2 px-3 text-txtLightPrimary rounded md:bg-transparent md:p-0 dark:text-txtDarkPrimary"
+            aria-current="page"
+          >
+            {menu.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

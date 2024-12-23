@@ -25,10 +25,10 @@
 3. Inicia el servidor de desarrollo:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
-4. Visita la página en tu navegador en `http://localhost:3000`.
+4. Visita la página en tu navegador en `http://localhost:4321`.
 
 ## Contribuciones
 

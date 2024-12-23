@@ -1,0 +1,20 @@
+---
+import Sun from '../../icons/Sun.astro';
+import Moon from '../../icons/Moon.astro';
+---
+
+<button
+  id="darkThemeButton"
+  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-full md:order-3 hover:bg-gray-200 dark:hover:bg-gray-700"
+>
+  <Sun id="openDarkTheme" class="hidden dark:block" />
+  <Moon id="closeDarkTheme" class="block dark:hidden" />
+</button>
+
+<script>
+  const darkThemeButton = document.querySelector('#darkThemeButton');
+
+  darkThemeButton?.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+</script>

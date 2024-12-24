@@ -6,23 +6,11 @@ const languages = [
     name: 'Ingles',
     icon: UnitedStates,
   },
-  {
-    name: 'Deutsch',
-    icon: 'flag-icon-css-de',
-  },
-  {
-    name: 'Italiano',
-    icon: 'flag-icon-css-it',
-  },
-  {
-    name: '中文 (繁體)',
-    icon: 'flag-icon-css-cn',
-  },
 ];
 ---
 
 <div
-  class="absolute top-10 z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+  class="hidden relative my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
   id="language-dropdown-menu"
 >
   <ul class="py-2 font-medium" role="none">
@@ -35,7 +23,7 @@ const languages = [
             role="menuitem"
           >
             <div class="inline-flex items-center">
-              <languages.icon class="size-5" /> {languages.name}
+              <languages.icon class="size-5" /> <span class="pl-1">{languages.name}</span>
             </div>
           </a>
         </li>

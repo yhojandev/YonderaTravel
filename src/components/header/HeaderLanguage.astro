@@ -3,7 +3,7 @@ import Peru from '../../icons/Peru.astro';
 import Language from './Language.astro';
 ---
 
-<div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+<div class="flex items-center space-x-1 md:space-x-0 rtl:space-x-reverse">
   <button
     id="language-button"
     type="button"
@@ -11,9 +11,8 @@ import Language from './Language.astro';
     class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
   >
     <Peru class="size-4" />
-    Español
+    <span class="pl-1">Español</span>
   </button>
-  <!-- Dropdown -->
   <Language />
 </div>
 

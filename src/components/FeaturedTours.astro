@@ -1,0 +1,58 @@
+---
+const ToursPopulares = [
+  {
+    nombre: 'Nombre del Tour 1',
+    duracion: '5 días',
+    precio: '$500',
+    imagen: 'background.webp',
+    ruta: 'detalle-tour1.html',
+  },
+  {
+    nombre: 'Nombre del Tour 2',
+    duracion: '7 días',
+    precio: '$700',
+    imagen: 'background.webp',
+    ruta: 'detalle-tour2.html',
+  },
+  {
+    nombre: 'Nombre del Tour 3',
+    duracion: '3 días',
+    precio: '$300',
+    imagen: 'background.webp',
+    ruta: 'detalle-tour3.html',
+  },
+];
+---
+
+<section id="featured-tours" class="container mx-auto py-16 space-y-20">
+  <h2 class="font-semibold text-4xl text-black text-center">Nuestros Tours más Populares</h2>
+
+  <div class="grid grid-cols-1 gap-5 md:grid-cols-3 sm:grid-cols-2">
+    {
+      ToursPopulares.map((tour) => (
+        <div class="relative bg-white rounded-t-xl shadow-2xl">
+          <div class=" w-full rounded-t-xl overflow-hidden">
+            <img src={tour.imagen} alt={tour.nombre} class=" w-full h-full object-cover" />
+            <span class="absolute z-20 top-2 left-2  bg-primaryGreen px-3 py-1 text-white promotion-label rounded-full">
+              Popular
+            </span>
+          </div>
+          <div class=" flex flex-col p-8 text-pretty space-y-2">
+            <h3 class="font-bold text-2xl text-black">{tour.nombre}</h3>
+
+            <p>
+              <span class="font-medium">Duración:</span> {tour.duracion}
+            </p>
+
+            <div class="flex  items-center justify-between space-x-4">
+              <p class="font-bold text-3xl text-primaryGreen">{tour.precio}</p>
+              <button class="px-4 py-2 bg-primaryGreen text-white rounded-full ">
+                <a href={tour.ruta}>Ver detalles</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

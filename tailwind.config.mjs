@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryGreen: '#2af598', // Color principal verde
+        primaryGreen: '#00b965', // Color principal verde
         primaryAzure: '#009efd', // Color principal azul
         txtLightPrimary: '#333333', // Texto principal en modo claro
         txtLightSecondary: '#666666', // Texto secundario en modo claro

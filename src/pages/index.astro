@@ -1,8 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Video from '../components/Video.astro';
 import Hero from '../components/Hero.astro';
+import FeaturedTours from '../components/FeaturedTours.astro';
+import Benefits from '../components/Benefits.astro';
+import Destinations from '../components/Destinations.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Promotions from '../components/Promotions.astro';
+import Subscription from '../components/Subscription.astro';
 ---
 
-<Layout>
-  <Hero />
+<Layout
+  title="Yondera Travel"
+  description="Yondera Travel is a travel agency that offers the best tours and experiences in the world."
+>
+  <Video />
+  <main>
+    <FeaturedTours />
+    <Benefits />
+    <Destinations />
+    <Testimonials />
+    <Promotions />
+    <Subscription />
+  </main>
 </Layout>

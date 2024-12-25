@@ -1,0 +1,28 @@
+<div class="w-full relative -top-16">
+  <div
+    class="absolute w-full h-screen z-40 text-pretty text-center text-white flex items-center justify-center"
+  >
+    <div class="flex flex-col gap-y-3">
+      <h1 class="font-semibold text-6xl">Explora el mundo con nosotros</h1>
+      <p class="">Tours personalizados a los destinos más increíbles del mundo</p>
+      <div class="">
+        <button class="px-2 py-1 bg-amber-300 rounded-lg"><a href="#">Ver Tours</a></button>
+      </div>
+      <!-- Formulario de búsqueda rápida -->
+      <form action="/buscar" method="get" class="search-form">
+        <input type="text" name="destino" placeholder="Busca tu destino" required />
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+
+  <video
+    class="w-full h-screen object-cover"
+    src="video.mp4"
+    autoplay
+    loop
+    muted
+    style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0% 85%);"></video>
+  <video class="absolute w-full blur-3xl -bottom-32 -z-40" src="video2.mp4" autoplay loop muted>
+  </video>
+</div>

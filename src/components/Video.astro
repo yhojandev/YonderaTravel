@@ -1,34 +1,27 @@
-<div class="w-full relative -top-16">
-  <div
-    class="absolute w-full h-screen z-40 text-pretty text-center text-white flex items-center justify-center"
-  >
-    <div class="flex flex-col gap-y-3">
-      <h1 class="font-semibold text-6xl">Explora el mundo con nosotros</h1>
-      <p class="">Tours personalizados a los destinos más increíbles del mundo</p>
-      <div class="">
-        <button class="px-4 py-2 bg-primaryGreen rounded-lg"><a href="#">Ver Tours</a></button>
-      </div>
+<div class="w-full relative -top-[72px]">
+  <video class="w-full h-screen object-cover" src="video.mp4" autoplay loop muted></video>
+  <video class="absolute w-full blur-3xl -bottom-32 -z-40" src="video.mp4" autoplay loop muted
+  ></video>
+
+  <div class="absolute w-full h-full top-0 z-20 text-pretty flex items-center justify-center">
+    <div class="space-y-4 text-center">
+      <h1 class="font-bold text-6xl text-white">Explora el mundo con nosotros</h1>
+      <p class="font-semibold text-2xl text-white">
+        Tours personalizados a los destinos más increíbles del mundo
+      </p>
       <!-- Formulario de búsqueda rápida -->
-      <form action="/buscar" method="get" class="search-form">
+      <form action="/buscar" method="get" class="flex space-x-2 w-10/12 m-auto md:w-1/2 md:m-auto">
         <input
           type="text"
           name="destino"
           placeholder="Busca tu destino"
           required
-          class="py-2 px-2 border-2 border-solid border-primaryGreen"
+          class="w-full rounded-full bg-white px-4 py-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-white focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primaryGreen"
         />
-        <button type="submit" class="px-4 py-2 bg-primaryGreen rounded-lg">Buscar</button>
+        <button type="submit" class="px-4 py-2 bg-primaryGreen rounded-full text-white"
+          >Buscar</button
+        >
       </form>
     </div>
   </div>
-
-  <video
-    class="w-full h-screen object-cover"
-    src="video.mp4"
-    autoplay
-    loop
-    muted
-    style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0% 85%);"></video>
-  <video class="absolute w-full blur-3xl -bottom-32 -z-40" src="video2.mp4" autoplay loop muted>
-  </video>
 </div>
